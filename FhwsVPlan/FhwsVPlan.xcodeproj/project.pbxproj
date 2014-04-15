@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		289ECB3318FD53F500AA34C3 /* MBSessionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289ECB3218FD53F500AA34C3 /* MBSessionTableViewController.m */; };
+		289ECB3618FD569600AA34C3 /* MBModuleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289ECB3518FD569600AA34C3 /* MBModuleTableViewController.m */; };
+		289ECB3A18FD5D9200AA34C3 /* MBLectureTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289ECB3918FD5D9200AA34C3 /* MBLectureTableViewController.m */; };
 		28A6418C18FC432F007903A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A6418B18FC432F007903A3 /* Foundation.framework */; };
 		28A6418E18FC432F007903A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A6418D18FC432F007903A3 /* CoreGraphics.framework */; };
 		28A6419018FC432F007903A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A6418F18FC432F007903A3 /* UIKit.framework */; };
@@ -49,6 +52,7 @@
 		28A6423518FC6B6A007903A3 /* MBProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A6422B18FC6B6A007903A3 /* MBProgram.m */; };
 		28A6423618FC6B6A007903A3 /* MBSemester.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A6422D18FC6B6A007903A3 /* MBSemester.m */; };
 		28A6423718FC6B6A007903A3 /* MBSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A6422F18FC6B6A007903A3 /* MBSession.m */; };
+		28AE409718FC953E007613C6 /* MBProgramTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AE409618FC953E007613C6 /* MBProgramTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		289ECB3118FD53F500AA34C3 /* MBSessionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBSessionTableViewController.h; sourceTree = "<group>"; };
+		289ECB3218FD53F500AA34C3 /* MBSessionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBSessionTableViewController.m; sourceTree = "<group>"; };
+		289ECB3418FD569600AA34C3 /* MBModuleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBModuleTableViewController.h; sourceTree = "<group>"; };
+		289ECB3518FD569600AA34C3 /* MBModuleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBModuleTableViewController.m; sourceTree = "<group>"; };
+		289ECB3818FD5D9200AA34C3 /* MBLectureTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBLectureTableViewController.h; sourceTree = "<group>"; };
+		289ECB3918FD5D9200AA34C3 /* MBLectureTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBLectureTableViewController.m; sourceTree = "<group>"; };
 		28A6418818FC432F007903A3 /* FhwsVPlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FhwsVPlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28A6418B18FC432F007903A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		28A6418D18FC432F007903A3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -139,6 +149,8 @@
 		28A6422E18FC6B6A007903A3 /* MBSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBSession.h; sourceTree = "<group>"; };
 		28A6422F18FC6B6A007903A3 /* MBSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBSession.m; sourceTree = "<group>"; };
 		28A6423018FC6B6A007903A3 /* Models.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Models.h; sourceTree = "<group>"; };
+		28AE409518FC953E007613C6 /* MBProgramTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgramTableViewController.h; sourceTree = "<group>"; };
+		28AE409618FC953E007613C6 /* MBProgramTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgramTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,8 +214,14 @@
 				28A641A618FC432F007903A3 /* Images.xcassets */,
 				28A641A018FC432F007903A3 /* Main_iPad.storyboard */,
 				28A6419D18FC432F007903A3 /* Main_iPhone.storyboard */,
+				289ECB3418FD569600AA34C3 /* MBModuleTableViewController.h */,
+				289ECB3518FD569600AA34C3 /* MBModuleTableViewController.m */,
+				28AE409518FC953E007613C6 /* MBProgramTableViewController.h */,
+				28AE409618FC953E007613C6 /* MBProgramTableViewController.m */,
 				28A6421B18FC4B16007903A3 /* MBSemesterViewController.h */,
 				28A6421C18FC4B16007903A3 /* MBSemesterViewController.m */,
+				289ECB3118FD53F500AA34C3 /* MBSessionTableViewController.h */,
+				289ECB3218FD53F500AA34C3 /* MBSessionTableViewController.m */,
 				28A641A318FC432F007903A3 /* MBViewController.h */,
 				28A641A418FC432F007903A3 /* MBViewController.m */,
 				28A6421418FC489B007903A3 /* MBWebService.h */,
@@ -213,6 +231,8 @@
 				28A6422118FC6B6A007903A3 /* Model */,
 				28A6419218FC432F007903A3 /* Supporting Files */,
 				28A641C418FC43A9007903A3 /* Vendor */,
+				289ECB3818FD5D9200AA34C3 /* MBLectureTableViewController.h */,
+				289ECB3918FD5D9200AA34C3 /* MBLectureTableViewController.m */,
 			);
 			path = FhwsVPlan;
 			sourceTree = "<group>";
@@ -448,17 +468,21 @@
 				28A6421618FC489B007903A3 /* MBWebService.m in Sources */,
 				28A6421D18FC4B16007903A3 /* MBSemesterViewController.m in Sources */,
 				28A641EE18FC43AA007903A3 /* AFNetworkReachabilityManager.m in Sources */,
+				289ECB3618FD569600AA34C3 /* MBModuleTableViewController.m in Sources */,
 				28A641F218FC43AA007903A3 /* AFURLResponseSerialization.m in Sources */,
 				28A641F018FC43AA007903A3 /* AFURLConnectionOperation.m in Sources */,
 				28A641F718FC43AA007903A3 /* UIButton+AFNetworking.m in Sources */,
 				28A641F518FC43AA007903A3 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				28A6422018FC4EDE007903A3 /* MBWebServiceResponseSerializer.m in Sources */,
+				28AE409718FC953E007613C6 /* MBProgramTableViewController.m in Sources */,
+				289ECB3318FD53F500AA34C3 /* MBSessionTableViewController.m in Sources */,
 				28A641EF18FC43AA007903A3 /* AFSecurityPolicy.m in Sources */,
 				28A641FA18FC43AA007903A3 /* UIRefreshControl+AFNetworking.m in Sources */,
 				28A641FB18FC43AA007903A3 /* UIWebView+AFNetworking.m in Sources */,
 				28A641ED18FC43AA007903A3 /* AFHTTPSessionManager.m in Sources */,
 				28A641F618FC43AA007903A3 /* UIAlertView+AFNetworking.m in Sources */,
 				28A641F118FC43AA007903A3 /* AFURLRequestSerialization.m in Sources */,
+				289ECB3A18FD5D9200AA34C3 /* MBLectureTableViewController.m in Sources */,
 				28A641F418FC43AA007903A3 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				28A6423318FC6B6A007903A3 /* MBLink.m in Sources */,
 				28A641F318FC43AA007903A3 /* AFURLSessionManager.m in Sources */,

@@ -11,6 +11,6 @@
 @interface MBModule : NSObject
 @property(nonatomic, strong) NSString *number;
 @property(nonatomic, strong) NSString *label;
-@property(nonatomic, strong) NSArray *lecturers; // TODO
+@property(nonatomic, strong) NSArray *lecturers;
 @property(nonatomic, strong) NSArray *events;
 @end

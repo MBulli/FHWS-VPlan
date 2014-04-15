@@ -16,6 +16,7 @@
 @property(nonatomic, strong) NSString *email;
 @property(nonatomic, strong) NSString *lastname;
 @property(nonatomic, strong) NSString *firstname;
+@property(nonatomic, strong) NSString *function;
 @property(nonatomic, strong) NSURL *imageurl;
 @property(nonatomic, strong) NSArray *modules;
 

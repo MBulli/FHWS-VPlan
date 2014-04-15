@@ -22,7 +22,6 @@
 
 +(MBWebService*)sharedInstance;
 
-@property(nonatomic, weak) id<MBWebServiceDelegate> delegate;
-
--(void)loadSemesters;
+-(void)loadSemestersWithDelegate:(id<MBWebServiceDelegate>)delegate;
+-(void)loadUrl:(NSURL*)url withDelegate:(id<MBWebServiceDelegate>)delegate;
 @end

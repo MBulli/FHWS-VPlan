@@ -44,8 +44,47 @@
         }
         
         return semester;
+    } else if ([obj valueForKey:@"sessions"]) {
+        MBProgram *program = [[MBProgram alloc] init];
+        
+        program.name = [obj valueForKey:@"name"];
+        program.sessions = [self mapLinkArray:[obj valueForKey:@"sessions"]];
+        
+        return program;
+    } else if([obj valueForKey:@"session"]) {
+        MBSession *session = [[MBSession alloc] init];
+        
+        session.specialisation = [obj valueForKey:@"specialisation"];
+        session.session = [obj valueForKey:@"session"];
+        session.label = [obj valueForKey:@"label"];
+        session.modules = [self mapLinkArray:[obj valueForKey:@"modules"]];
+        
+        return session;
+    } else if([obj valueForKey:@"events"]) {
+        MBModule *module = [[MBModule alloc] init];
+        
+        module.number = [obj valueForKey:@"number"];
+        module.label = [obj valueForKey:@"label"];
+        module.lecturers = [self mapLinkArray:[obj valueForKey:@"lecturers"]];
+        module.events = [self mapLinkArray:[obj valueForKey:@"events"]];
+        
+        return module;
+    } else if([obj valueForKey:@"imageurl"]) {
+        MBLecturer *lecturer = [[MBLecturer alloc] init];
+        
+        lecturer.consultationdate = [obj valueForKey:@"consultationdate"];
+        lecturer.phone = [obj valueForKey:@"phonenumber"];
+        lecturer.title = [obj valueForKey:@"title"];
+        lecturer.email = [obj valueForKey:@"email"];
+        lecturer.lastname = [obj valueForKey:@"lastname"];
+        lecturer.firstname = [obj valueForKey:@"firstname"];
+        lecturer.function = [obj valueForKey:@"functions"];
+        lecturer.imageurl = [NSURL URLWithString:[obj valueForKey:@"imageurl"]];
+        lecturer.modules = [self mapLinkArray:[obj valueForKey:@"modules"]];
+        
+        return lecturer;
     }
-    
+
     return nil;
 }
 

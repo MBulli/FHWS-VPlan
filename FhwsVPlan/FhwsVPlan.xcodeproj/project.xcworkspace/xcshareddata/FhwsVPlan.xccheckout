@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>18D86674-4331-4E70-8242-EB05F69888D8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FhwsVPlan</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ABF38EE1-AD77-4AE7-9EF2-40B4730B0357</key>
+		<string>https://github.com/MBulli/FHWS-VPlan.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FhwsVPlan/FhwsVPlan.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ABF38EE1-AD77-4AE7-9EF2-40B4730B0357</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/MBulli/FHWS-VPlan.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ABF38EE1-AD77-4AE7-9EF2-40B4730B0357</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ABF38EE1-AD77-4AE7-9EF2-40B4730B0357</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FHWS-VPlan</string>
+		</dict>
+	</array>
+</dict>
+</plist>

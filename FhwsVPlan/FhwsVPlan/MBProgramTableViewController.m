@@ -1,21 +1,21 @@
 //
-//  MBSemesterViewControllerTableViewController.m
+//  MBProgramTableViewController.m
 //  FhwsVPlan
 //
-//  Created by Markus on 14.04.14.
+//  Created by Markus on 15.04.14.
 //  Copyright (c) 2014 MBulli. All rights reserved.
 //
 
-#import "MBSemesterViewController.h"
-
 #import "MBProgramTableViewController.h"
+
+#import "MBSessionTableViewController.h"
 #import "Models.h"
 
-@interface MBSemesterViewController ()
-@property(nonatomic, strong) MBSemester *semester;
+@interface MBProgramTableViewController ()
+@property(nonatomic, strong) MBProgram *program;
 @end
 
-@implementation MBSemesterViewController
+@implementation MBProgramTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -30,7 +30,9 @@
 {
     [super viewDidLoad];
     
-    [[MBWebService sharedInstance] loadSemestersWithDelegate:self];
+    if (self.followLink) {
+        [[MBWebService sharedInstance] loadUrl:self.followLink.url withDelegate:self];
+    }
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -44,14 +46,13 @@
     // Dispose of any resources that can be recreated.
 }
 
-
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"segProgram"]) {
-        MBProgramTableViewController *dest = segue.destinationViewController;
+    if ([segue.identifier isEqualToString:@"segSession"]) {
+        MBSessionTableViewController *dest = segue.destinationViewController;
         
         int row = [[self.tableView indexPathForSelectedRow] row];
-        dest.followLink = self.semester.programs[row];
+        dest.followLink = self.program.sessions[row];
     }
 }
 
@@ -64,14 +65,14 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.semester.programs.count;
+    return self.program.sessions.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
-    MBLink *link = [self.semester.programs objectAtIndex:indexPath.row];
+    MBLink *link = [self.program.sessions objectAtIndex:indexPath.row];
     
     cell.textLabel.text = link.label;
     
@@ -90,10 +91,11 @@
 
 -(void)webService:(MBWebService *)service didLoadObjects:(NSArray *)objects
 {
-    self.semester = [objects firstObject];
-    self.title = self.semester.label;
+    self.program = [objects firstObject];
+    self.title = self.program.name;
     
     [self.tableView reloadData];
 }
+
 
 @end
